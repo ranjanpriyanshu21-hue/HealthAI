@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Healthcare Diagnosis</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>AI Healthcare Diagnosis System</h1>
+
+<form action="/predict" method="POST">
+    <h3>Select Symptoms:</h3>
+
+    {% for symptom in symptoms %}
+        <label>
+            <input type="checkbox" name="symptoms" value="{{symptom}}">
+            {{symptom}}
+        </label><br>
+    {% endfor %}
+
+    <button type="submit">Predict</button>
+</form>
+<div style="text-align:center;">
+    <img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" width="80">
+</div>
+
+</body>
+</html>

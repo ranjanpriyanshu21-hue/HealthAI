@@ -1,0 +1,140 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* Gradient + Image Background */
+    background: linear-gradient(rgba(0, 102, 204, 0.7), rgba(0, 204, 255, 0.7)),
+                url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Card */
+form, body > div {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    width: 350px;
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+    text-align: left;
+    color: white;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #00c6ff;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #0056b3, #0099cc);
+}
+
+/* Result Text */
+h2, h3 {
+    text-align: center;
+}
+
+/* Link */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+form {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card wrapper */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    width: 350px;
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+    color: white;
+}
+
+/* Result styling */
+.result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+/* Confidence styling */
+.confidence {
+    font-size: 20px;
+    color: #ffff99;
+}
