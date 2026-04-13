@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>Healthcare AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🏥 AI Healthcare Dashboard</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>🔐 Login</h2>
+      <select id="role">
+        <option>Doctor</option>
+        <option>Patient</option>
+      </select>
+      <input id="username" placeholder="Enter name">
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div class="card">
+      <h2>👤 Register Patient</h2>
+      <input id="name" placeholder="Name">
+      <input id="age" placeholder="Age">
+      <input id="gender" placeholder="Gender">
+      <input id="contact" placeholder="Contact">
+      <button onclick="register()">Register</button>
+    </div>
+
+    <div class="card">
+      <h2>🧠 Symptom Analysis</h2>
+      <input id="patientId" placeholder="Patient ID">
+      <input id="symptoms" placeholder="fever,cough">
+      <button onclick="submitSymptoms()">Analyze</button>
+      <p id="result" class="result"></p>
+    </div>
+
+    <div class="card">
+      <h2>👨‍⚕️ Doctor Panel</h2>
+      <input id="docId" placeholder="Patient ID">
+      <input id="notes" placeholder="Notes">
+      <input id="treatment" placeholder="Treatment">
+      <button onclick="updateDoctor()">Update</button>
+    </div>
+
+    <div class="card">
+      <h2>🔍 Search Patients</h2>
+      <input id="search" placeholder="Search by name">
+      <button onclick="searchPatients()">Search</button>
+      <ul id="patientsList"></ul>
+    </div>
+
+    <div class="card">
+      <h2>📄 Report</h2>
+      <button onclick="printReport()">Download / Print</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

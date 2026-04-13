@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1776097607904",
+    "age": "21",
+    "gender": "male",
+    "contact": "1234"
+  },
+  {
+    "id": "1776097627719",
+    "age": "21",
+    "gender": "male",
+    "contact": "1234"
+  },
+  {
+    "id": "1776097703541",
+    "age": "21",
+    "gender": "male",
+    "contact": "1234"
+  },
+  {
+    "id": "1776097724870",
+    "age": "21",
+    "gender": "male",
+    "contact": "1234",
+    "symptoms": [
+      "headache"
+    ]
+  },
+  {
+    "id": "1776098428987",
+    "age": "21",
+    "gender": "male",
+    "contact": "1234",
+    "symptoms": [
+      "fever",
+      " cough",
+      " headache"
+    ],
+    "prediction": {
+      "disease": "Unknown",
+      "confidence": "50%",
+      "treatment": "Consult doctor"
+    },
+    "doctorNotes": "",
+    "finalTreatment": ""
+  }
+]
